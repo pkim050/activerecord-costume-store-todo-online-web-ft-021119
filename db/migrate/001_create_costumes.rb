@@ -12,7 +12,7 @@ class CreateCostumes < ActiveRecord::Migration
   def change
     create_table :costumes do |element|
       element.string :name
-      element.integer :price
+      element.float :price
       element.integer :size
       element.string :image_url
       element.timestamp :created_at
