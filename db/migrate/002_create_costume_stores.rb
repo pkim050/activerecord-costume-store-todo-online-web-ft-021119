@@ -1,7 +1,7 @@
 # Create your costume_stores migration here
 class CreateCostumeStores < ActiveRecord::Migration[4.2]
   def change
-    create_table costume_stores do |element|
+    create_table :costume_stores do |element|
       element.string :name
       element.string :location
       element.integer :costume_inventory
